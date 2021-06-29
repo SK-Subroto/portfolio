@@ -1,0 +1,400 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card img {
+    border-radius: 20px;
+}
+
+/*css reset*/
+
+.navbar {
+    font-size: 1.2rem;
+    padding: 1% 7%;
+    background-color: #FDFDFE;
+}
+.navbar ul li:hover {
+    border-bottom: #8B7CD8 3px solid;
+}
+.navbar-brand{
+    font-family: 'Satisfy';
+    color: #8B7CD8;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+.social-media > i{
+    margin-bottom: 20px;
+}
+.home-name{
+    margin: 0;
+    margin-bottom: 3%;
+
+}
+.home-designation{
+    color: #8B7CD8;
+    margin-bottom: 3%;
+}
+.home-note{
+    text-align: left;
+    margin-bottom: 6%;
+    font-weight: lighter; 
+    line-height: 1.6; 
+    word-spacing: 1.4px; 
+    margin-right: 20px;
+}
+#home img {
+    width: 110%;
+    margin: -70px 0 0 0;
+    padding: 0;
+}
+#home button {
+    background-color: #8B7CD8;
+}
+
+/* about */
+.about-container {
+    padding: 8% 7%;
+    color: white;
+}
+
+.about-details{
+    margin-top: 5%;
+}
+#about button {
+    color: white;
+    border: white 2px solid;
+}
+#about img{
+    height: 350px;
+    border: white 4px solid;
+}
+/* professional experience div starts here  */
+.professional-experience{
+    padding: 7% 7%; 
+    border-bottom: #8B7CD8 2px solid;    
+}
+.professional-experience i{
+    color: #FE7A77;
+}
+.professional-experience .card{
+    background-color: #FDFDFE;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    /* height: 700px;     */
+}
+.professional-experience .card:hover {   
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2)
+}
+
+.professional-experience .card-icon{
+    text-align: center;
+}
+.card-description{
+    height: 535px;
+    overflow: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card-description::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.card-description {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* .card-icon img{
+    margin-top: 20px;
+    width: 100px;
+} */
+.rounded-img{
+    /* border: 5px solid #FE7A77; */
+    border-radius: 50%;   
+    padding: 15px;   
+}
+
+.card-title h2{
+    background-color: #8B7CD8 ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.skills-container{
+    padding-right: 45px;
+}
+
+/* progress bar for skill div starts here  */
+.skills-container li{
+    font-weight: bolder;
+    list-style: none;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;  
+}
+
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(86, 86, 153, .5);
+    border-radius: 1000px;
+}
+
+
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0;
+    height: 10px;
+    background-color: rgb(86, 86, 153, 1);
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-direction: alternate; */
+    animation-iteration-count: 3;
+}
+
+
+.skills-container li.html::after{
+   animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        /* background-color: orange; */
+    }
+}
+.skills-container li.css::after{
+   animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+
+.skills-container li.bootstrap::after{
+    animation-name: bs;
+ }
+ 
+ @keyframes bs{
+     to{
+         width: 85%;
+     }
+ }
+
+.skills-container li.js::after{
+   animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 75%;
+    }
+}
+
+.skills-container li.jquery::after{
+    animation-name: jq;
+ }
+ 
+ @keyframes jq{
+     to{
+         width: 80%;
+     }
+ }
+
+
+
+.skills-container li.node::after{
+   animation-name: node;
+}
+
+@keyframes node{
+    to{
+        width: 85%;
+    }
+}
+
+.skills-container li.express::after{
+    animation-name: express;
+ }
+ 
+ @keyframes express{
+     to{
+         width: 75%;
+     }
+ }
+
+ .skills-container li.git::after{
+    animation-name: github;
+ }
+ 
+ @keyframes github{
+     to{
+         width: 75%;
+     }
+ }
+ 
+
+.skills-container li.react::after{
+   animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 65%;
+    }
+}
+
+/* progress bar for skill div starts here  */
+
+
+
+.professional-experience::after{
+    clear: both;
+    content: '';   
+    display: table;
+}
+/* professional-experience div ends here  */
+
+/* project */
+.project-container{
+    padding: 8% 12%;
+    text-align: center;
+    border-bottom: #8B7CD8 2px solid;
+}
+.project-head{
+    color: #8B7CD8;
+}
+.project-container .card {
+    text-align: left;
+}
+.project-container .card-text{
+    height: 100px;
+}
+.project-live{
+    background-color: #8B7CD8;
+    color: white;
+}
+.project-git{
+    color: #000;
+    margin-left: 10px;
+}
+
+/* achievement */
+.achievement-container{
+    padding: 8% 12%;
+    text-align: center;
+}
+.achievement-head{
+    color: #8B7CD8;
+}
+
+.achievement-container .card{
+    text-align: left;
+}
+.achievement-container .card-body{
+    position: relative;
+}
+.achievement-container .card-badge{
+    position: absolute;
+    background-color: #8B7CD8;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'satisfy';
+    border-radius: 50px;
+    margin: -40px 0 0 0 ;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+.achievement-container .card-title{
+    height: 70px;
+}
+.achievement-container .card-text{
+    height: 100px;
+}
+
+/* contact */
+.contact-container {
+    padding: 8% 12%;
+    color: white;
+}
+.contact-head {
+    text-align: center;
+    margin-bottom: 10%;
+}
+#contact button {
+    background-color: #CAE988;
+}
+.contact-type span {
+    margin-left: 8px;
+}
+.contact-type p {
+    margin-left: 30px;
+}
+
+section{
+	width: 100%;
+	/* float: left; */
+	/* height: 100vh; */
+    height: auto;
+	/* position: relative; */
+}
+
+#home{
+	background-color: #FDFDFE;
+}
+
+#about{
+	background-color: #8B7CD8;
+}
+
+#skill{
+	background-color: #FDFDFE;
+}
+
+#project{
+	background-color: #FDFDFE;
+}
+
+#achievement{
+	background-color: #FDFDFE;
+}
+
+#contact{
+	background-color: #8B7CD8;
+}
+
+.shape{
+    padding: 14% 7%;
+}
+
