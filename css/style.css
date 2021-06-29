@@ -42,6 +42,10 @@ body{
 }
 .social-media > i{
     margin-bottom: 20px;
+    transition: .3s;
+}
+.social-media > i:hover{
+    font-size: 4rem;
 }
 .home-name{
     margin: 0;
@@ -83,7 +87,8 @@ body{
     border: white 2px solid;
 }
 #about img{
-    height: 350px;
+    /* height: 350px; */
+    width: 83%;
     border: white 4px solid;
 }
 /* professional experience div starts here  */
@@ -398,3 +403,13 @@ section{
     padding: 14% 7%;
 }
 
+@media screen and (max-width: 992px) {
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .social-media > i{
+        margin-right: 20px;
+    }
+  }
