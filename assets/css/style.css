@@ -22,7 +22,7 @@ body{
 /*css reset*/
 
 .navbar {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0 7%;
     background-color: #FDFDFE;
     /* height: 50px; */
@@ -35,21 +35,25 @@ body{
 }
 .navbar-brand{
     font-family: 'Satisfy';
-    color: #8B7CD8;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.navbar-light .navbar-brand {
+    color: #8B7CD8;
+}
+.home-container{
+    padding: 14% 7%;
+}
 .social-media {
     display: flex;
     flex-direction: column;
 }
-.social-media > i{
+.social-media > a{
     margin-bottom: 20px;
     transition: .3s;
 }
-.social-media > i:hover{
-    font-size: 3.5rem;
+.social-media > a:hover{
+    font-size: 1.2rem;
 }
 .home-name{
     margin: 0;
@@ -70,8 +74,8 @@ body{
 }
 #home img {
     width: 110%;
-    margin: -70px 0 0 0;
-    padding: 0;
+    margin: -50px 0 0 0;
+    padding: 5%;
 }
 #home button {
     background-color: #8B7CD8;
@@ -100,7 +104,7 @@ body{
 .about-details{
     margin-top: 5%;
 }
-#about button {
+#about a {
     color: white;
     border: white 2px solid;
 }
@@ -108,6 +112,9 @@ body{
     /* height: 350px; */
     width: 83%;
     border: white 4px solid;
+}
+.about-hr{
+    border: white 1px solid;
 }
 /* professional experience div starts here  */
 .professional-experience{
@@ -396,10 +403,11 @@ body{
     margin-left: 30px;
 }
 /* footer */
-#footer p {
+#footer {
     color: white;
     text-align: center;
     height: 50px;
+    padding-top: 1%;
 }
 section{
 	width: 100%;
@@ -437,9 +445,6 @@ section{
     background-color: rgb(41, 41, 41);
 }
 
-.shape{
-    padding: 14% 7%;
-}
 
 @media screen and (max-width: 992px) {
     .social-media {
@@ -448,8 +453,12 @@ section{
         justify-content: flex-start;
         height: 70px;
     }
-    .social-media > i{
+    .social-media > a{
         margin-right: 20px;
+    }
+    .home-note{
+        word-spacing: 1.2px; 
+        font-size: 1.1rem;
     }
     #about img{
         width: 50%;
@@ -465,11 +474,15 @@ section{
         margin-top: 20px;
     }
     .home-note{
-        text-align: justify;
+        word-spacing: 1.2px; 
+        font-size: 1.0rem;
     }
     #home img {
         width: 100%;
         display: block;
         margin: 0 auto;
     }
+    /* #home button {
+        margin-bottom: 25px;
+    } */
 }
