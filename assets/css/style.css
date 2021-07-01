@@ -77,6 +77,8 @@ body{
     line-height: 1.6; 
     word-spacing: 1.4px; 
     margin-right: 20px;
+    /* width: 450px; */
+    max-width: 80vh;
 }
 #home img {
     width: 110%;
@@ -465,6 +467,7 @@ section{
     .home-note{
         word-spacing: 1.2px; 
         font-size: 1.1rem;
+        max-width: 50vh;
     }
   }
 
@@ -475,6 +478,7 @@ section{
     .home-note{
         word-spacing: 1.2px; 
         font-size: 1.0rem;
+        max-width: 40vh;
     }
     #home img {
         width: 100%;
