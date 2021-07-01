@@ -43,10 +43,16 @@ body{
 }
 .home-container{
     padding: 14% 7%;
+    animation: icon-slide 2s alternate;
+}
+@keyframes icon-slide {
+    0%{margin-left: -10%;}
+    100%{}
 }
 .social-media {
     display: flex;
     flex-direction: column;
+    
 }
 .social-media > a{
     margin-bottom: 20px;
@@ -79,17 +85,17 @@ body{
 }
 #home button {
     background-color: #8B7CD8;
-    /* animation: blink 2s infinite linear; */
+    animation: blink 1s 2s 6 alternate;
 }
-/* @keyframes blink{
+@keyframes blink{
     0%{
         background-color: #8B7CD8;
     }
     100%{
         background-color: #7e70c9;
-        box-shadow: 0 16px 32px 0 #8B7CD8
+        box-shadow: 0 12px 25px 0 #8B7CD8
     }
-} */
+}
 #home button:hover {
     background-color: #7e70c9;
     box-shadow: 0 12px 25px 0 #8B7CD8
@@ -207,7 +213,7 @@ body{
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     /* animation-direction: alternate; */
-    animation-iteration-count: 3;
+    animation-iteration-count: 5;
 }
 
 
