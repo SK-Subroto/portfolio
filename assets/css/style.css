@@ -81,9 +81,11 @@ body{
     max-width: 80vh;
 }
 #home img {
-    width: 110%;
+    width: 80%;
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
+    transform: scaleX(-1);
     margin: -50px 0 0 0;
-    padding: 5%;
+    padding: 3%;
 }
 #home button {
     background-color: #8B7CD8;
@@ -108,7 +110,9 @@ body{
     padding: 8% 7%;
     color: white;
 }
-
+.about-note{
+    text-align: justify;
+}
 .about-details{
     margin-top: 5%;
 }
@@ -479,6 +483,7 @@ section{
         word-spacing: 1.2px; 
         font-size: 1.0rem;
         max-width: 40vh;
+        text-align: justify;
     }
     #home img {
         width: 100%;
